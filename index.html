@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Teller</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FN0GYSV68"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9FN0GYSV68');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Joke Teller</h1>
+        <p class="joke" id="joke">Joke</p>
+        <div class="rating">
+            <button class="thumb-up" id="thumbUp">&#128077;</button>
+            <button class="thumb-down" id="thumbDown">&#128078;</button>
+        </div>
+        <button class="btn" id="btn">Generate a joke for me</button>
+        <button class="clear-btn" id="clearBtn">Clear</button>
+        <div class="button-container">
+            <button class="copy-btn" id="copyJoke"><i class="fas fa-copy"></i></button>
+            <button class="filter-btn" id="unLikedBtn"><img src="https://www.pngmart.com/files/12/Dislike-Emoji-PNG-Image.png" alt="Unliked" height="30px" width="30px" /></button>
+            <div class="liked-container">
+                <i class="fa-solid fa-heart liked-btn"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

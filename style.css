@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2017/09/18/17/32/smile-2765268_1280.png');
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.container {
+    background-color: #f4f0f3;
+    border: 2px solid black;
+    padding: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .3);
+    border-radius: 15px;
+    max-width: 55%;
+    text-align: center;
+    color: #021202;
+}
+
+.heading {
+    font-size: 35px;
+    font-weight: 300;
+    font-family: sans-serif;
+    color: #010313;
+}
+
+.joke {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 40px;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, .3);
+    border-color: rgba(255, 255, 255, .6);
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 300px;
+    color: darkgreen;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, .3);
+    transition: all 300ms ease;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.button-container button {
+    margin-right: 10px;
+}
+
+.copyJoke{
+    height:14px;
+}
+
+.thumb-up,
+.thumb-down {
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.thumb-up:hover,
+.thumb-down:hover {
+    background-color: #45a049;
+}
+
+.clear-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.clear-btn:hover {
+    background-color: #d32f2f;
+}
+
+.liked-btn,
+.unliked-btn {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.liked-btn:hover,
+.unliked-btn:hover {
+    background-color: #0056b3;
+}
+
+.joke-history {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 98%;
+    }
+}
